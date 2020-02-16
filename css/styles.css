@@ -2,16 +2,27 @@
     padding: 0;
     margin: 0;
     font-family: times-new-roman, sans-serif, arial;
+    box-sizing: border-box;
 }
 body {
-    background-image: url(../images/background.jpg);
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(1,132,144,1) 25%, rgba(0,212,255,1) 100%);
 }
-div#wrapper {
-    width: 940px;
-    margin: 30px auto;
-    background: rgba( 100, 150, 100, .9);
+div#outerwrapper {
+    width: 960px;
+    margin: auto;
     overflow: hidden;
-    padding: 20px 20px 0 20px;
+    padding: 0px;
+}
+div#innerwrapper {
+    width: 920px;
+    min-height: 720px;
+    margin: 0 20px;
+    background: rgba( 1, 132, 144, .9);
+    overflow: hidden;
+    padding: 20px 0;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
 }
 header {
     margin-bottom: 20px 0;
@@ -19,14 +30,21 @@ header {
 /*    fixes box crashing down*/
     width: 100%;
     clear: both;
+    border: 5px black solid;
 }
 header p {
-    display: inline;
-    font-size: 72px;
+    display: block;
+    font-size: 32px;
+}
+header p.inline{
+    display: inline-block;
 }
 header a {
     text-decoration: none;
     color: yellow;
+}
+header img {
+    display: inline;
 }
 header a:link {
   text-decoration: none;
@@ -41,20 +59,29 @@ header a:active {
   text-decoration: underline;
 }
 .headerwrapper {
-    width: 940px;
-    background: #450;
+    width: 100%;
+    background: #26596A;
     overflow: hidden;
+}
+header div.right {
+    width: 300px;
+}
+header div.right p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 20px auto;
+    font-style: italic;
 }
 .logo {
     height: 100px;  
 }
 nav {
-    background: orange;
+    background: #452F74;
     height: 50px;
     line-height: 50px;
 /*    same height and line-height to center vertically*/
-    width: 940px;
-    margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 0px;
 }
 nav ul {
     width: 940px;
@@ -76,7 +103,7 @@ nav a {
 /*    makes anchor cover entire block*/
 }
 nav a:hover {
-    background: #450;
+    background: #AA8939;
 }
 main {
     float: left;
@@ -89,6 +116,12 @@ aside {
     width: 270px;
     padding: 10px;
     border: 10px solid black;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
 }
 aside p {
     text-align: justify;
