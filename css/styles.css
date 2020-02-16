@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: times-new-roman, sans-serif, arial;
+}
+body {
+    background-image: url(../images/background.jpg);
+}
+div#wrapper {
+    width: 940px;
+    margin: 30px auto;
+    background: rgba( 100, 150, 100, .9);
+    overflow: hidden;
+    padding: 20px 20px 0 20px;
+}
+header {
+    margin-bottom: 20px 0;
+    overflow: hidden;
+/*    fixes box crashing down*/
+    width: 100%;
+    clear: both;
+}
+header p {
+    display: inline;
+    font-size: 72px;
+}
+header a {
+    text-decoration: none;
+    color: yellow;
+}
+header a:link {
+  text-decoration: none;
+}
+header a:visited {
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: none;
+}
+header a:active {
+  text-decoration: underline;
+}
+.headerwrapper {
+    width: 940px;
+    background: #450;
+    overflow: hidden;
+}
+.logo {
+    height: 100px;  
+}
+nav {
+    background: orange;
+    height: 50px;
+    line-height: 50px;
+/*    same height and line-height to center vertically*/
+    width: 940px;
+    margin-bottom: 20px;
+}
+nav ul {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav li {
+    float: left;
+    text-align: center;
+    width: 20%;
+/*    20% sets list to cover 100% of width with 5 items*/
+}
+nav a {
+    color: black;
+    display: block;
+/*    makes anchor cover entire block*/
+}
+nav a:hover {
+    background: #450;
+}
+main {
+    float: left;
+    width: 600px;
+    clear: both;
+}
+aside {
+    float: right;
+    background: olive;
+    width: 270px;
+    padding: 10px;
+    border: 10px solid black;
+}
+aside p {
+    text-align: justify;
+}
+footer {
+    line-height: 50px; /*same as height will center it*/
+    height: 50px;
+    background: orange;
+    clear: both; /*keeps footer under the floated image*/
+}
+footer li {
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+}
+footer ul {
+    margin-left: 30px;
+}
+#valid {
+    height: 50px;
+}
+img.right {
+    width: 200px;
+    float: right;
+    padding-left: 15px;
+}
+img.left {
+    width: 200px;
+    float: left;
+    padding-right: 15px;
+}
+img.bigimage {
+    width: 640px;
+    margin: 0 150px 20px;
+    display: block;
+}
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+p {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    text-indent: 10px;
+}
