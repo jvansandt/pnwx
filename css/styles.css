@@ -30,7 +30,7 @@ header {
 /*    fixes box crashing down*/
     width: 100%;
     clear: both;
-    border: 5px black solid;
+    border: 5px #E27D40 solid;
 }
 header p {
     display: block;
@@ -60,7 +60,7 @@ header a:active {
 }
 .headerwrapper {
     width: 100%;
-    background: #26596A;
+    background: #E27D60;
     overflow: hidden;
 }
 header div.right {
@@ -91,11 +91,10 @@ nav ul {
     justify-content: center;
 }
 nav li {
-    float: left;
     text-align: center;
     width: 15%;
 /*    20% sets list to cover 100% of width with 5 items*/
-    border: 3px solid black;
+    border: 3px solid #E27D40;
     margin-top: -20px;
     background: white;
     margin-left: 20px;
@@ -107,7 +106,7 @@ nav a {
 /*    makes anchor cover entire block*/
 }
 nav a:hover {
-    background: #AA8939;
+    background: #E8A87C;
 }
 main {
     float: left;
@@ -116,10 +115,10 @@ main {
 }
 aside {
     float: right;
-    background: olive;
+    background: #C38D9E;
     width: 270px;
     padding: 10px;
-    border: 5px solid black;
+    border: 5px solid #C38D7E;
 }
 .right {
     float: right;
@@ -141,7 +140,7 @@ input[type=text] {
 footer {
     line-height: 50px; /*same as height will center it*/
     height: 50px;
-    background: orange;
+    background: #E27D40;
     clear: both; /*keeps footer under the floated image*/
 }
 footer li {
@@ -157,13 +156,11 @@ footer ul {
 }
 img.right {
     width: 200px;
-    float: right;
-    padding-left: 15px;
+    padding: 10px;
 }
 img.left {
     width: 200px;
-    float: left;
-    padding-right: 15px;
+    padding: 10px;
 }
 img.bigimage {
     width: 640px;
@@ -183,7 +180,7 @@ h3 {
     font-size: 1.4em;
 }
 p {
-    margin-bottom: 20px;
+    margin: 0px 10px;
     line-height: 1.5em;
     text-indent: 10px;
 }
