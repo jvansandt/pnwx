@@ -20,9 +20,10 @@ header {
     width: 100%;
     background: #1c5372;
     border-bottom: 1px darkblue solid;
-    overflow: auto;
+    overflow: none;
     color: white;
     opacity: .8;
+    height: 121px; /* +1px for border-bottom*/
 }
 header img {
     display: inline-block;
