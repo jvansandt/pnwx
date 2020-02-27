@@ -1,89 +1,50 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: times-new-roman, sans-serif, arial;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans", "Roboto", "Arial", sans-serif;
 }
+
 body {
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(1,132,144,1) 25%, rgba(0,212,255,1) 100%);
+    background: url(/images/banner2.jpg);
+    background-size: cover;
+    background-color: blue;
 }
-div#outerwrapper {
+
+.wrap {
     width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0px;
+    margin: 0 auto;
 }
-div#innerwrapper {
-    width: 920px;
-    min-height: 720px;
-    margin: 0px 20px 0px 20px;
-    background: rgba( 1, 132, 144, .9);
-    overflow: hidden;
-    padding: 50px 0;
-    border-left: 1px black solid;
-    border-right: 1px black solid;
-}
+
 header {
-    margin-bottom: 20px 0;
-    overflow: hidden;
-/*    fixes box crashing down*/
     width: 100%;
-    clear: both;
-    border: 5px #E27D40 solid;
-}
-header p {
-    display: block;
-    font-size: 32px;
-}
-header p.inline{
-    display: inline-block;
-}
-header a {
-    text-decoration: none;
-    color: yellow;
+    background: #1c5372;
+    text-align: center;
+    border-bottom: 1px darkblue solid;
+    overflow: auto;
+    color: white;
+    opacity: .8;
 }
 header img {
-    display: inline;
+    float: left;
+    height: 100px;
 }
-header a:link {
-  text-decoration: none;
-}
-header a:visited {
-  text-decoration: none;
-}
-header a:hover {
-  text-decoration: none;
-}
-header a:active {
-  text-decoration: underline;
-}
-.headerwrapper {
-    width: 100%;
-    background: #E27D60;
-    overflow: hidden;
-}
-header div.right {
-    width: 300px;
-}
-header div.right p {
+header p {
+    float: right;
     font-size: 1.2em;
-    text-align: center;
-    margin: 20px auto;
-    font-style: italic;
+    padding: 30px;
 }
-.logo {
-    height: 100px;  
-}
+
 nav {
-    height: 0px;
-    line-height: 50px;
-/*    same height and line-height to center vertically*/
     width: 100%;
-    margin-bottom: 0px;
+    padding-bottom: 30px;
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    background: white;
+    z-index: 1;
 }
 nav ul {
-    width: 940px;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -94,93 +55,71 @@ nav li {
     text-align: center;
     width: 15%;
 /*    20% sets list to cover 100% of width with 5 items*/
-    border: 3px solid #E27D40;
-    margin-top: -20px;
     background: white;
     margin-left: 20px;
     margin-right: 20px;
 }
 nav a {
-    color: black;
+    color: #1c5372;
     display: block;
-/*    makes anchor cover entire block*/
+    text-decoration: none;
+    font-size: 1.5em;
 }
 nav a:hover {
-    background: #E8A87C;
+    background: #1c5372;
+    color: white;
 }
+
 main {
-    float: left;
-    width: 600px;
+    height: 1000px;
+    background: white;
+    opacity: .9;
     clear: both;
 }
-aside {
-    float: right;
-    background: #C38D9E;
-    width: 270px;
-    padding: 10px;
-    border: 5px solid #C38D7E;
+
+.links {
+    background: skyblue;
+    padding: 5px;
+    display: table;
 }
-.right {
-    float: right;
+.links ul {
+    display: table-cell;
+    width: 15%;
+    vertical-align: top;
 }
-.left {
-    float: left;
+.links li {
+    margin: 2px 20px;
 }
-aside p {
-    text-align: justify;
-}
-/* Style the search box inside the navigation bar */
-input[type=text] {
-  width: 100%;
-  padding: 0px;
-  border: 1px solid black;
-  margin: 0 auto;
-  font-size: 17px;
-}
-footer {
-    line-height: 50px; /*same as height will center it*/
-    height: 50px;
-    background: #E27D40;
-    clear: both; /*keeps footer under the floated image*/
-}
-footer li {
+.links li:nth-child(1) {
     list-style-type: none;
-    float: left;
-    margin-right: 30px;
+    text-indent: 20px;
+    font-weight: bolder;
+}
+
+footer {
+    width: 100%;
+    background: #1c5372;
+    padding: 5px;
 }
 footer ul {
-    margin-left: 30px;
+    text-align: center;
 }
-#valid {
-    height: 50px;
+footer li {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 30px;
+    font-weight: bold;
+    color: white;
 }
-img.right {
-    width: 200px;
-    padding: 10px;
+footer a {
+    color: white;
 }
-img.left {
-    width: 200px;
-    padding: 10px;
+img#valid {
+    height: 2em;
+    vertical-align: bottom;
 }
-img.bigimage {
-    width: 640px;
-    margin: 0 150px 20px;
-    display: block;
-}
-h1, h2, h3 {
-    margin: 10px;
-}
-h1 {
-    font-size: 3em;
-}
-h2 {
-    font-size: 2em;
-}
-h3 {
-    font-size: 1.4em;
-}
-p {
-    margin: 0px 10px;
-    line-height: 1.5em;
-    text-indent: 10px;
+footer a.top {
+    float: left;
+    margin: 5px;
 }
