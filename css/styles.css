@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(/images/banner2.jpg);
+    background: url(../images/banner2.jpg);
     background-size: cover;
     background-color: blue;
 }
