@@ -19,20 +19,24 @@ body {
 header {
     width: 100%;
     background: #1c5372;
-    text-align: center;
     border-bottom: 1px darkblue solid;
     overflow: auto;
     color: white;
     opacity: .8;
 }
 header img {
+    display: inline-block;
     float: left;
-    height: 100px;
+    height: 120px;
 }
 header p {
+    display: inline-block;
     float: right;
+    text-align: center;
+    height: 100%;
     font-size: 1.2em;
-    padding: 30px;
+    font-style: italic;
+    margin: 33px;
 }
 
 nav {
