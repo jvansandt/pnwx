@@ -79,7 +79,27 @@ main {
     height: 1000px;
     background: white;
     opacity: .9;
-    
+    padding: 30px;
+}
+.postnav {
+    height: 40px;
+    width: 100%;
+}
+.left {
+    width: 50%;
+    float: left;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: green solid 2px;
+}
+.right {
+    float: right;
+    width: 45%;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: red solid 2px;
 }
 
 .links {
