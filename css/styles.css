@@ -46,7 +46,7 @@ nav {
     position: sticky;
     top: 0;
     overflow: auto;
-    background: white;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 75%, rgba(255,255,255,0) 100%);
     z-index: 1;
 }
 nav ul {
@@ -79,7 +79,7 @@ main {
     height: 1000px;
     background: white;
     opacity: .9;
-    clear: both;
+    
 }
 
 .links {
