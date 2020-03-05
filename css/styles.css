@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Open Sans", "Roboto", "Arial", sans-serif;
 }
-
+/*////// every page begin //////*/
 body {
     background: url(../images/banner2.jpg);
     background-size: cover;
@@ -19,7 +19,6 @@ body {
 header {
     width: 100%;
     background: #1c5372;
-    border-bottom: 1px darkblue solid;
     overflow: none;
     color: white;
     opacity: .8;
@@ -76,7 +75,8 @@ nav a:hover {
 }
 
 main {
-    height: 1000px;
+    min-height: 1000px;
+	overflow: auto;
     background: white;
     opacity: .9;
     padding: 30px;
@@ -147,4 +147,48 @@ img#valid {
 footer a.top {
     float: left;
     margin: 5px;
+}
+/*////// every page end //////*/
+
+/*////// index page begin //////*/
+
+.intro {
+}
+.intro p {
+	text-align: center;
+	font-size: 1.3em;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+	border: #008DDC solid 4px;
+	border-radius: 30px;
+	background: #008DDC;
+}
+.intro p.two {
+	border: #9B0000 solid 4px;
+	border-radius: 30px;
+	background: #9B0000;
+	color: white;
+}
+.columnleft {
+	float: left;
+	width: 48%;
+	clear: left;
+	padding: 10px;
+	margin: 1%;
+}
+.columnright {
+	float: right;
+	width: 48%;
+	clear: right;
+	padding: 10px;
+	margin: 1%;
+}
+.review img {
+	float: left;
+	height: 60px;
+	padding-right: 5px;
+}
+.owner img {
+	float: right;
+	height: 120px;
 }
