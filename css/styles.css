@@ -176,6 +176,9 @@ footer a.top {
 	padding: 10px;
 	margin: 1%;
 }
+.columnleft p {
+	padding-bottom: 15px;
+}
 .columnright {
 	float: right;
 	width: 48%;
@@ -183,12 +186,27 @@ footer a.top {
 	padding: 10px;
 	margin: 1%;
 }
+.review p {
+	padding: 0px 0px 5px 10px;
+}
 .review img {
 	float: left;
 	height: 60px;
-	padding-right: 5px;
+	padding: 0px 5px;
+	border-left: 1px solid black;
+}
+.review h3 {
+	padding: 5px 5px;
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+}
+.owner {
+	padding-top: 35px;
 }
 .owner img {
 	float: right;
 	height: 120px;
+	padding: 3px;
+	margin-left: 5px;
+	border: solid black 1px;
 }
