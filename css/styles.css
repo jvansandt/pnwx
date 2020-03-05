@@ -113,7 +113,9 @@ main {
     vertical-align: top;
 }
 .links li {
-    margin: 2px 20px;
+    margin: 2px 10px;
+	list-style-type: circle;
+	list-style-position: inside;
 }
 .links li:nth-child(1) {
     list-style-type: none;
@@ -163,7 +165,7 @@ footer a.top {
 	border-radius: 30px;
 	background: #008DDC;
 }
-.intro p.two {
+.intro p:nth-child(2) {
 	border: #9B0000 solid 4px;
 	border-radius: 30px;
 	background: #9B0000;
@@ -203,10 +205,25 @@ footer a.top {
 .owner {
 	padding-top: 35px;
 }
+.owner p {
+	font-style: italic;
+}
 .owner img {
 	float: right;
 	height: 120px;
 	padding: 3px;
 	margin-left: 5px;
 	border: solid black 1px;
+}
+
+/*////// index page end //////*/
+
+/*////// contact page begin //////*/
+
+.contactbox {
+	min-height: 200px;
+}
+.contactbox img {
+	width: 20%;
+	padding: 20px 10px;
 }
