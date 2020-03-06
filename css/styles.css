@@ -228,6 +228,31 @@ footer a.top {
 	border: solid black 1px;
 }
 
+.newproducts {
+	width: 100%;
+}
+.productbox p {
+	overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+	font-size: 1.1em;
+}
+.productbox {
+	height: 120px;
+	overflow: hidden;
+}
+.odd img {
+	width: 80px;
+	float: left;
+	margin-right: 10px;
+}
+.even img {
+	width: 80px;
+	float: right;
+	margin-left: 10px;
+}
+
 /*////// index page end //////*/
 
 /*////// contact page begin //////*/
