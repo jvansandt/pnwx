@@ -83,7 +83,7 @@ main {
     min-height: 1000px;
 	overflow: auto;
     background: white;
-    opacity: .9;
+    opacity: .95;
     padding: 30px;
 }
 .postnav {
@@ -173,12 +173,12 @@ footer a.top {
 	font-size: 1.3em;
 	font-weight: 600;
 	margin: 0 0 20px 0;
-	border: #008DDC solid 4px;
+	border: #008DDC solid 6px;
 	border-radius: 30px;
 	background: #008DDC;
 }
 .intro p:nth-child(2) {
-	border: #9B0000 solid 4px;
+	border: #9B0000 solid 6px;
 	border-radius: 30px;
 	background: #9B0000;
 	color: white;
@@ -192,6 +192,9 @@ footer a.top {
 }
 .columnleft p {
 	padding-bottom: 15px;
+}
+.columnleft h2 {
+	text-align: center;
 }
 .columnright {
 	float: right;
@@ -230,6 +233,11 @@ footer a.top {
 
 .newproducts {
 	width: 100%;
+	background: #00979F;
+	border-radius: 5px;
+}
+.newproducts p {
+	margin: 0 10px;
 }
 .productbox p {
 	overflow: hidden;
@@ -241,6 +249,12 @@ footer a.top {
 .productbox {
 	height: 120px;
 	overflow: hidden;
+	margin: 3px;
+	background: #79A8BC;
+	border-radius: 5px;
+}
+.productbox h3 {
+	margin: 0 5px;
 }
 .odd img {
 	width: 80px;
@@ -274,7 +288,6 @@ footer a.top {
 	position: relative;
 	text-align: center;
 	padding: 4%;
-	border: red solid 1px;
 	height: 220px;
 	width: 33%;
 }
@@ -299,4 +312,26 @@ footer a.top {
 .linkbox:hover {
 	font-size: 1.2em;
 	transition-duration: .1s;
+}
+
+/*////// links page end //////*/
+
+/*////// store pages begin //////*/
+
+.crumbs {
+	border: solid black 1px;
+	margin-bottom: 10px;
+	display: block;
+}
+.crumbs a {
+	text-decoration: none;
+}
+.store li {
+	display: inline;
+}
+.store li::after {
+	content: " |";
+}
+.store li:last-child:after {
+	content: '';
 }
