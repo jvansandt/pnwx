@@ -73,6 +73,8 @@ nav a {
     display: block;
     text-decoration: none;
     font-size: 1.5em;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 }
 nav a:hover {
     background: #1c5372;
@@ -168,16 +170,19 @@ footer a.top {
 
 .intro {
 }
-.intro p {
+.intro p:first-of-type {
 	text-align: center;
 	font-size: 1.3em;
 	font-weight: 600;
 	margin: 0 0 20px 0;
-	border: #008DDC solid 6px;
-	border-radius: 30px;
-	background: #008DDC;
+	padding: 3px;
+	border: #008DDC dotted 4px;
 }
 .intro p:nth-child(2) {
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: 600;
+	margin: 0 0 20px 0;
 	border: #9B0000 solid 6px;
 	border-radius: 30px;
 	background: #9B0000;
@@ -233,7 +238,7 @@ footer a.top {
 
 .newproducts {
 	width: 100%;
-	background: #00979F;
+	border: solid 1px #00979F;
 	border-radius: 5px;
 }
 .newproducts p {
@@ -258,13 +263,17 @@ footer a.top {
 }
 .odd img {
 	width: 80px;
+	max-height: 80px;
 	float: left;
-	margin-right: 10px;
+	margin: 5px 10px 0px 0px;
+	border-radius: 0px 5px 5px 0px;
 }
 .even img {
 	width: 80px;
+	max-height: 80px;
 	float: right;
-	margin-left: 10px;
+	margin: 5px 0px 0px 10px;
+	border-radius: 5px 0px 0px 5px;
 }
 
 /*////// index page end //////*/
