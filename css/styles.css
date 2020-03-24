@@ -195,10 +195,10 @@ footer a.top {
 	padding: 10px;
 	margin: 1%;
 }
-.columnleft p {
+.columnleft p, .columnright p {
 	padding-bottom: 15px;
 }
-.columnleft h2 {
+.columnleft h2, .columnright h2, h1 {
 	text-align: center;
 }
 .columnright {
