@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Open Sans", "Roboto", "Arial", sans-serif;
 }
-/*////// every page begin //////*/
+
 html {
 	scroll-behavior: smooth;
 }
@@ -164,9 +164,7 @@ footer a.top {
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
-/*////// every page end //////*/
 
-/*////// index page begin //////*/
 
 .intro {
 }
@@ -276,10 +274,6 @@ footer a.top {
 	border-radius: 5px 0px 0px 5px;
 }
 
-/*////// index page end //////*/
-
-/*////// contact page begin //////*/
-
 .contactbox {
 	min-height: 200px;
 }
@@ -287,10 +281,6 @@ footer a.top {
 	width: 20%;
 	padding: 20px 10px;
 }
-
-/*////// contact page end //////*/
-
-/*////// links page begin //////*/
 
 .linkbox {
 	display: inline-block;
@@ -323,10 +313,6 @@ footer a.top {
 	transition-duration: .1s;
 }
 
-/*////// links page end //////*/
-
-/*////// store pages begin //////*/
-
 .crumbs {
 	margin-bottom: 10px;
 	display: block;
@@ -342,4 +328,12 @@ footer a.top {
 }
 .store li:last-child:after {
 	content: '';
+}
+
+.questions, .contactbox {
+	min-height: 200px;
+	border: 5px double black;
+	padding: 10px;
+	margin-bottom: 20px;
+	background: #F0FEFF;
 }
